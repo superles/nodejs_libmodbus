@@ -10,6 +10,7 @@
     "node": ">= 0.8.0"
   },
   "scripts": {
+    "preinstall": "git submodule update -i -r",
     "install": "./make_libmodbus.sh && node-gyp configure --python=python2 && node-gyp build",
     "preuninstall": "rm -rf libmodbus build"
   },

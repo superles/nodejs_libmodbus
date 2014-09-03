@@ -11,6 +11,9 @@
 						'ldflags': [
 							'-lmodbus'
 						],
+						'include_dirs': [
+							'/usr/local/include/libmodbus/',
+						],
 						'sources': [
 							'./src/main.cpp'
 						],

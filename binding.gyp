@@ -8,9 +8,11 @@
 						'cflags': [
 							'-Wall',
 						],
-						'ldflags': [
-							'-lmodbus'
-						],
+						'link_settings': {
+						          'libraries': [
+						              '-lmodbus'
+						          ]
+						},
 						'include_dirs': [
 							'/usr/local/include/modbus/',
 						],

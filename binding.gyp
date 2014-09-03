@@ -12,7 +12,7 @@
 							'-lmodbus'
 						],
 						'include_dirs': [
-							'/usr/local/include/libmodbus/',
+							'/usr/local/include/modbus/',
 						],
 						'sources': [
 							'./src/main.cpp'

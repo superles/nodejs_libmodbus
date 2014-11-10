@@ -8,6 +8,28 @@
 						'cflags': [
 							'-Wall',
 						],
+						'link_settings': {
+						          'libraries': [
+						              '-lmodbus'
+						          ]
+						},
+						'include_dirs': [
+							'/usr/local/include/modbus/',
+						],
+						'sources': [
+							'./src/main.cpp'
+						],
+					},
+				]
+			}
+		],[
+			'OS=="mac"', {
+				'targets': [
+					{
+						'target_name': 'modbus_binding',
+						'cflags': [
+							'-Wall',
+						],
 						'ldflags': [
 							'../libmodbus/src/.libs/modbus.o',
 							'../libmodbus/src/.libs/modbus-data.o',

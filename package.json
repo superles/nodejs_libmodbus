@@ -10,7 +10,7 @@
     "node": ">= 0.8.0"
   },
   "scripts": {
-    "install": "./make_libmodbus.sh && node-gyp configure --python=python2 && node-gyp build",
+    "install": "node-gyp configure --python=python2 && node-gyp build",
     "preuninstall": "rm -rf libmodbus build"
   },
   "author": {
@@ -25,7 +25,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/tuxnsk/nodejs_libmodbus.git"
+    "url": "https://github.com/samkrew/nodejs_libmodbus.git"
   },
   "license": "BSD"
 }
